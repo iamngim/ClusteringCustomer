@@ -132,7 +132,7 @@ def main():
     # LƯU MÔ HÌNH ĐỂ DÙNG LẠI CHO DATA MỚI
     save_model_artifacts(scaler, kmeans_model)
 
-    print("\nHOÀN TẤT! Mô hình đã được lưu và có thể dùng lại vô hạn lần.")
+    print("\nHOÀN TẤT! Mô hình đã được lưu.")
 
 
 if __name__ == "__main__":
