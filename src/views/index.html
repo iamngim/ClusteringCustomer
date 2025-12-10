@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Trang chủ{% endblock %}
+{% block content %}
+
+<div class="hero-section text-center mb-5">
+    <h1 class="fw-bold display-6">🚀 Hệ thống phân tích & phân cụm khách hàng</h1>
+    <p class="text-muted fs-5 mt-2">
+        Hiểu khách hàng của bạn hơn với sức mạnh của <b>Machine Learning</b> – trực quan, chính xác và cực kỳ dễ dùng.
+    </p>
+</div>
+
+<!-- GIỚI THIỆU -->
+<div class="card-custom mb-5 shadow-lg border-0 intro-card">
+    <h4 class="fw-bold">📊 Tính năng chính</h4>
+    <p class="mt-2">
+        Công cụ sử dụng thuật toán <b>K-Means</b> cùng bộ đặc trưng nâng cao <b>RFM mở rộng</b> để phân tích hành vi khách hàng.
+        Hỗ trợ doanh nghiệp xây dựng chiến lược Marketing, CRM và chăm sóc khách hàng hiệu quả.
+    </p>
+
+    <ul class="mt-3">
+        <li>✔ Upload dữ liệu và phân cụm tự động</li>
+        <li>✔ Trực quan hoá bằng biểu đồ phân tích</li>
+        <li>✔ Bảng thống kê chi tiết từng cụm</li>
+        <li>✔ Dự đoán cụm của khách hàng mới</li>
+    </ul>
+</div>
+
+<!-- FEATURE GRID -->
+<div class="row g-4 mb-5">
+
+    <div class="col-md-4">
+        <div class="card-custom feature-card text-center p-4">
+            <div class="fs-1 mb-3 text-primary"><i class="bi bi-upload"></i></div>
+            <h5 class="fw-bold">Tải dữ liệu lên</h5>
+            <p>Dễ dàng nhập file CSV giao dịch khách hàng để bắt đầu phân tích.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-custom feature-card text-center p-4">
+            <div class="fs-1 mb-3 text-success"><i class="bi bi-bar-chart"></i></div>
+            <h5 class="fw-bold">Phân cụm & biểu đồ</h5>
+            <p>Trực quan hoá dữ liệu theo cụm bằng bảng thống kê và biểu đồ.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-custom feature-card text-center p-4">
+            <div class="fs-1 mb-3 text-warning"><i class="bi bi-stars"></i></div>
+            <h5 class="fw-bold">Dự đoán khách hàng mới</h5>
+            <p>Nhập RFM để xem khách hàng thuộc cụm nào trong vài giây.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- UPLOAD SECTION -->
+<div class="card-custom p-5 upload-card shadow">
+    <h4 class="fw-bold mb-3 text-center">📁 Upload dữ liệu CSV để bắt đầu</h4>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data" class="mt-3">
+        <input type="file" name="file" class="form-control form-control-lg mb-3" required>
+        <button class="btn btn-primary btn-lg w-100 py-3">
+            🚀 Tải lên & Phân cụm ngay
+        </button>
+    </form>
+</div>
+
+{% endblock %}

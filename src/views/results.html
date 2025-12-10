@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Kết quả phân cụm{% endblock %}
+{% block content %}
+
+<h2 class="dashboard-title mb-4">📈 Kết quả phân cụm khách hàng</h2>
+
+<ul class="nav nav-pills mb-4 px-2">
+    <li class="nav-item">
+        <button class="nav-link active px-4 py-2" data-bs-toggle="pill" data-bs-target="#tab-table">
+            📋 Bảng kết quả
+        </button>
+    </li>
+    <li class="nav-item ms-2">
+        <button class="nav-link px-4 py-2" data-bs-toggle="pill" data-bs-target="#tab-charts">
+            📊 Biểu đồ
+        </button>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <!-- BẢNG -->
+    <div class="tab-pane fade show active" id="tab-table">
+        <div class="card-custom shadow-lg p-4">
+            <h4 class="mb-3">📋 Trung bình các đặc trưng theo từng cụm</h4>
+
+            <table class="table table-hover table-bordered text-center align-middle">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Cụm</th>
+                        <th>Recency</th>
+                        <th>Frequency</th>
+                        <th>Monetary</th>
+                        <th>Total Quantity</th>
+                        <th>Avg Unit Price</th>
+                    </tr>
+                </thead>
+
+                {% for c in clusters %}
+                <tr>
+                    <td class="fw-bold">{{ c }}</td>
+                    <td>{{ summary['Recency'][c] }}</td>
+                    <td>{{ summary['Frequency'][c] }}</td>
+                    <td>{{ summary['Monetary'][c] }}</td>
+                    <td>{{ summary['TotalQuantity'][c] }}</td>
+                    <td>{{ summary['AvgUnitPrice'][c] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <!-- BIỂU ĐỒ -->
+    <div class="tab-pane fade" id="tab-charts">
+        <div class="card-custom shadow-lg mb-4 p-4">
+            <h4>📊 Biểu đồ đặc trưng trung bình theo cụm</h4>
+            <img src="{{ url_for('static', filename='cluster_summary.png') }}" class="img-fluid rounded mt-3 shadow">
+        </div>
+
+        <div class="card-custom shadow-lg p-4">
+            <h4>📉 Scatter: Frequency vs Monetary</h4>
+            <img src="{{ url_for('static', filename='scatter.png') }}" class="img-fluid rounded mt-3 shadow">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
