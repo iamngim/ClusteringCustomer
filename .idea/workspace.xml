@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8bd62a2-f5c4-4c8b-9b16-1c8b1bb229bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/elbow_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/elbow_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/kmeans_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/kmeans_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/scaler.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/scaler.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,26 +34,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Chart.executor": "Run",
-    "Python.Clustering.executor": "Run",
-    "Python.ClusteringModel.executor": "Run",
-    "Python.DataPreprocessing.executor": "Run",
-    "Python.ElbowPlot.executor": "Run",
-    "Python.Evaluation.executor": "Run",
-    "Python.Model.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.f.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Projects/ClusteringCustomer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Chart.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Clustering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ClusteringModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DataPreprocessing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ElbowPlot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Evaluation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.f.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Projects/ClusteringCustomer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Projects\ClusteringCustomer\images\bg" />
